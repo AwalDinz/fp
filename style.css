@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.h-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #000000;
+    position: relative;
+    top: -100px; /* Mulai dari luar layar atas */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    animation: slideIn 0.5s ease-out forwards; /* Animasi slideIn selama 0.5 detik */
+    }
+
+    @keyframes slideIn {
+        to {
+            top: 0; /* Posisi akhir, berada di 0px dari atas */
+            opacity: 1; /* Akhirnya opacity menjadi 1 */
+        }
+    
+}
+
+hr{ 
+    border: 0;
+    height: 3px;
+    background-color: #000000;
+    margin: 1px;
+}
+
+/* Card Styling */
+.card , .card1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-img-top {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.btn-primary {
+    background-color: #6366f1;
+    border-color: #6366f1;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    color: #006400;
+    background-color: #ffffff;
+    border-color: #6366f1;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin-top: 20px;
+}
+
+.page-link {
+    color: #6366f1;
+    border-color: #6366f1;
+}
+
+.page-link:hover {
+    color: #006400 ;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #6366f1;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#backToTopBtn:hover {
+    background-color: #ffffff;
+    color: #006400;
+    
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .h-title {
+        font-size: 2rem;
+    }
+
+    .card-img-top {
+        max-height: 150px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+}
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Menggeser card ke atas saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.card1 {
+    transition: transform 0.3s ease; /* Transisi transformasi */
+}
+
+.card1:hover {
+    transform: scale(1.05); /* Skala 105% saat dihover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
